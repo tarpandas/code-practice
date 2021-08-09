@@ -2,7 +2,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 void new_node(int);
-void delete(int);
 void display();
 typedef struct node{
     int data;
