@@ -1,0 +1,16 @@
+//WAP Decimal to binary conversion
+#include<stdio.h>
+int main(){
+    int a; int arr[10], count=-1;
+    printf("Enter a decimal no. ");
+    scanf("%d", &a);
+    for(int i=0;a!=0;i++){
+        arr[i] = a%2;
+        a/=2;
+        count++;
+    }
+    printf("It's binary: ");
+    for(int i=count;i>=0;i--)
+        printf("%d",arr[i]);
+    return 0;
+}
